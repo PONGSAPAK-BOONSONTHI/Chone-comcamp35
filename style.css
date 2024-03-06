@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped&family=Prompt&display=swap');
+@import url('https://fonts.cdnfonts.com/css/upheaval?styles=9487');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+body{
+    font-size: 20px;
+    background: rgb(15, 4, 27);
+    height: 10000px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(80 80 80 / 46%);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #0003;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(5px);
+    background-color: #1d093750;
+    z-index: 100;
+    border: 1px solid rgba(80, 80, 80, .3137254902);
+    border-radius: 16px;
+    margin: 12px;
+    font-family: "Prompt";
+    font-size: 15.2px;
+    color: rgb(237, 238, 240);
+
+}
+.Logo img{
+    width: 100px;
+    pointer-events: none;
+    margin-top: 10px;
+    overflow: clip;
+    cursor: pointer;
+}
+.span-navbar a{
+    justify-content: flex-start;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8.5px;
+}
+.span-navbar a:hover{
+    color: rgb(255, 213, 65);
+    transition: all .2s;
+}
+.register{
+    padding: 5px 20px;
+    border: none;
+    background: rgb(20, 52, 100);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all .2s;
+    cursor: pointer;
+    font-family: Prompt, sans-serif !important;
+}
+.register:hover{
+    background: #14346440;
+    color: rgb(255, 213, 65);
+}
+.Box-1{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100dvh;
+    background-color: rgb(21 6 39);
+    background-image: url(https://comcamp.io/assets/background-Cj2jXSzJ.gif);
+    background-position: bottom;
+    background-size: cover;
+    font-family: "Prompt";
+
+}
+.Box-1-img{
+    position: relative;
+    animation: slideUp-Down 2s ease-in-out infinite alternate;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+.Box-1-shadow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    width: 320px;
+    height: 320px;
+    background-image: linear-gradient(38deg, #143464 69%, #f9a31b 81%);
+    filter: blur(100px);
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+.Box-1-img-Logo{
+    height: auto;
+    width: 640px;
+    isolation: isolate;
+    z-index: 1;
+}
+.Box-1-KMUTT{
+    font-family: 'Upheaval TT (BRK)', sans-serif;                                            
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    color: #ffd541;
+    animation: zoomin-out .3s ease-in-out infinite alternate;
+    font-size: 28px;
+}
+.Box1-text1{
+    font-family: 'Upheaval TT (BRK)', sans-serif;                         
+    position: relative;
+    white-space: nowrap;
+    font-size: 64px;
+    z-index: 1;
+    margin-block: 0 12px;
+}
+.Box1-text2{
+    font-family: 'Noto Sans Thai Looped';
+    font-size: 20px;
+    text-align: center;
+    width: 548px;
+    margin-block: 0 24px;
+    z-index: 1;
+}
+@keyframes slideUp-Down {
+    0% {
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(10px);
+    }
+}
+@keyframes zoomin-out {
+    0% {
+        transform: scale(1) rotate(-20deg);
+    }
+
+    100% {
+        transform: scale(1.1) rotate(-20deg);
+    }
+    
+}
