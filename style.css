@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped&family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped&family=Prompt:wght@400;700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/upheaval?styles=9487');
 @font-face {
     font-family: Zftermin;
@@ -74,9 +74,9 @@ body{
     background: rgb(20, 52, 100);
     color: #fff;
     font-size: 16px;
-    font-weight: 400;
     transition: all .2s;
     cursor: pointer;
+    font-weight: 400;
     font-family: Prompt, sans-serif;
 }
 .register:hover{
@@ -210,6 +210,69 @@ body{
     height: 350px;
     overflow: clip;
 }
+.Box-3 h1{
+    letter-spacing: -1.425px;
+    text-align: center;
+    line-height: 57px;
+    font-size: 57px;
+    color: rgb(237, 238, 240);
+    font-weight: 400 !important;
+    font-family: Upheavtt, sans-serif !important;
+}
+.Box-3-CT {
+    width: auto;
+    margin-top: 24px;
+    padding: 0 10%;
+    gap: 24px;
+    /* background-color: #f9a31b; */
+}
+.Box-3-CT-T{
+    padding: 24px 45px;
+    border: 1px solid rgba(80, 80, 80, 0.314);
+    border-radius: 16px;
+    background-color: #1a408d40;
+    text-align: start;
+    transition: all .2s;
+}
+.Box-3-CT-T:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px #285cc440
+}
+.Box-3-CT-TH{
+    display: flex;
+    align-items: center;
+    justify-items: start;
+    gap: 10px;
+}
+.Box-3-CT-TH img{
+    height: 100px;
+    width: 100px;
+    user-select: none;
+    pointer-events: none;
+}
+.Box-3-CT-Htext{
+    display: grid;
+    gap: 12px;
+}
+.Box-3-CT-text1{
+    line-height: 34.2px;
+    letter-spacing: -0.1995px;
+    font-size: 26.6px;
+    color: rgb(237, 238, 240);
+    font-weight: 700;
+    font-family: Prompt, sans-serif;
+}
+.Box-3-CT-text2{
+    padding-left: 6px;
+    line-height: 22.8px;
+    letter-spacing: normal;
+    font-size: 15.2px;
+    color: rgb(237, 238, 240);
+    font-weight: 400;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+}
+
+
 @keyframes slideUp-Down {
     0% {
         transform: translateY(0);
@@ -227,13 +290,4 @@ body{
         transform: scale(1.1) rotate(-20deg);
     }
     
-}
-@keyframes scale {
-    0% {
-        transform: scale(1) rotate(-20deg)
-    }
-
-    to {
-        transform: scale(1.1) rotate(-20deg)
-    }
 }
