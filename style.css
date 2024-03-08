@@ -46,7 +46,7 @@ body{
     margin: 12px;
     font-family: "Prompt";
     font-size: 15.2px;
-    color: rgb(237, 238, 240);
+    color: #fff;
 
 }
 .Logo img{
@@ -210,7 +210,7 @@ body{
     height: 350px;
     overflow: clip;
 }
-.Box-3 h1{
+.Box {
     letter-spacing: -1.425px;
     text-align: center;
     line-height: 57px;
@@ -220,6 +220,7 @@ body{
     font-family: Upheavtt, sans-serif !important;
 }
 .Box-3-CT {
+    display: grid;
     width: auto;
     margin-top: 24px;
     padding: 0 10%;
@@ -271,7 +272,192 @@ body{
     font-weight: 400;
     font-family: 'Noto Sans Thai Looped', sans-serif;
 }
-
+.Box-4{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100dvh;
+    padding: 0 10%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.Box-4-CT{
+    display: grid;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    line-height: 22.8px;
+    column-gap: 22.8px;
+    margin-top: 30.4px;
+    margin-bottom: 30.4px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.Box-4-CT-T{
+    border: 2px solid rgba(80, 80, 80, .3137254902);
+    border-radius: 16px;
+    background-color: #1a408d40;
+    height: 370px;
+    padding: 24px;
+    transition: all .2s;
+}
+.Box-4-CT-T:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px #285cc440
+}
+.Box-4-CT-TT{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.Box-4-CT-TT img{
+    width: auto;
+    max-width: 100%;
+    text-align: center;
+    border-radius: 16px;
+    -webkit-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+.Box-4-CT-TT span{
+    margin-top: 24px;
+    text-align: center;
+    font-size: 15.2px;
+    color: rgb(237, 238, 240);
+    font-weight: 400;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+}
+.Box-4-text{
+    text-align: center;
+}
+.Box-4-text span{
+    font-size: 15.2px;
+    line-height: 22.8px;
+    color: rgb(237, 238, 240);
+    font-weight: 400;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+}
+.Box-5{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100dvh;
+    padding: 0 10%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.Box-5-CT{
+    display: grid;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    margin-top: 24px;
+    gap: 24px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.Box-5-CT div:hover{
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px #285cc440
+}
+.Box-5-CT div{
+    margin-top: 10rem;
+    padding: 48px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a408d40;
+    border: 1px solid rgba(80, 80, 80, .3137254902);
+    border-radius: 10px;
+    transition: all .2s;
+    position: relative;
+}
+.Box-5-CT img{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: -90px;
+}
+.Box-5-CT span{
+    text-align: center;
+    line-height: 24.7px;
+    font-size: 15.2px;
+    line-height: 22.8px;
+    color: rgb(237, 238, 240);
+    font-weight: 400;
+    font-family: 'Noto Sans Thai Looped', sans-serif;
+}
+.Box-5-CT h1{
+    letter-spacing: -0.095px;
+    text-align: center;
+    line-height: 24.7px;
+    font-size: 19px;
+    color: rgb(237, 238, 240);
+    font-weight: 700;
+    font-family: Prompt, sans-serif;
+}
+.Box-6{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100dvh;
+    padding: 0 10%;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.Box-6-CT{
+    display: block;
+    width: 100%;
+}
+.Box-6-CT-CL{
+    display: grid;
+    flex-direction: column;
+    width: auto;
+    justify-content: center;
+    margin-top: 24px;
+    gap: 24px;
+    width: 100%;
+    grid-template-columns: 1fr;
+}
+.Box-6-CT-CL div{
+    width: 100%;
+    overflow: hidden;
+    background-color: #1a408d40;
+    border-radius: 16px;
+    border: 1px solid rgba(80, 80, 80, .3137254902);
+    transition: all .2s;
+}
+.Box-6-CT-CL div button{
+    font-size: 18px;
+    font-family: Prompt, sans-serif !important;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+}
+.Box-6-CT-CL div button p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    transition: transform .3s;
+    margin-left: 20px;
+    width: 40px;
+}
+.Box-7{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10%;
+    box-sizing: border-box;
+    justify-content: center;
+}
 
 @keyframes slideUp-Down {
     0% {
@@ -289,5 +475,4 @@ body{
     100% {
         transform: scale(1.1) rotate(-20deg);
     }
-    
 }
