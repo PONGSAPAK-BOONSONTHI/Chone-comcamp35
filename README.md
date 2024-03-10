@@ -1,2 +1,2 @@
 # Chone-comcamp35
-การ Chone web เพื่อการศึกษา
+Chone web เพื่อการศึกษา
