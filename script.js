@@ -1,11 +1,14 @@
 function scrollToImage(imageId) {
     var image = document.getElementById(imageId);
-    image.scrollIntoView({ behavior: 'smooth' });
+    image.scrollIntoView({ behavior: 'smooth'});
 }
 function scrollToSection(sectionId) {
     var section = document.getElementById(sectionId);
     section.scrollIntoView({ behavior: 'smooth' });
 }
+
+var newHTML = '<div class="newElement">Your New HTML Content Here</div>';
+
 document.addEventListener("DOMContentLoaded", function() {
     const accordionButtons = document.querySelectorAll('.Box-6-CT-CL button');
 
@@ -31,3 +34,4 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
