@@ -76,9 +76,9 @@ body{
 .span-navbar a{
     justify-content: flex-start;
     text-decoration: none;
+    padding: 8.7px;
     line-height: 22.8px;
     font-weight: 400;
-    padding: 8.7px;
     font-size: 15.2px;
     font-family: Prompt, sans-serif;
     cursor: pointer;
@@ -132,7 +132,66 @@ body{
         display: block;
     }
 }
-
+.nb{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1d093750;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(80, 80, 80, .3137254902);
+    min-height: 100dvh;
+    padding: 8px 12px 12px;
+    display: none;
+}
+.navbar-XXX{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    box-sizing: border-box;
+    padding: 5px 20px;
+}
+.BaseButton-XXX{
+    border-radius: 5.7px;
+    appearance: none;
+    width: 38px;
+    height: 38px;
+    display: inline-flex;
+    justify-content: center;
+    box-sizing: border-box;
+    user-select: none;
+    vertical-align: top;
+    align-items: center;
+    border: none;
+    color: #edeef0;
+    background-color: #ddeaf814;
+}
+.BaseButton-XXX:hover{
+    background-color: rgba(211, 237, 248, 0.114);
+}
+.span-navbar-XXX{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0px;
+    gap: 22.8px;
+}
+.span-navbar-XXX a{
+    color: #fff;
+    line-height: 22.8px;
+    font-weight: 400;
+    font-size: 15.2px;
+    font-family: Prompt, sans-serif;
+    cursor: pointer;
+}
+.span-navbar-XXX a:hover{
+    color: rgb(255, 213, 65);
+    transition: all .2s;
+}
 .Box-1{
     align-items: center;
     display: flex;
@@ -292,12 +351,6 @@ body{
     height: 350px;
     overflow: clip;
 }
-@media screen and (max-width: 280px) {
-    .Box-2-shadow {
-        display:none
-    }
-}
-
 @media screen and (max-width: 1020px) {
     .Box-2-text2 {
         line-height: 24px;
@@ -306,12 +359,19 @@ body{
         text-indent: 0 ;
     }
 }
-
 @media screen and (max-width: 512px) {
-    .Box-2-img-img {
-        text-align:center;
+    .Box-2-img-img{
+        text-align: center;
         width: 80%;
         height: 80%;
+    }
+    .Box-2{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 280px) {
+    .Box-2-shadow {
+        display:none
     }
 }
 .Box-3-CT {

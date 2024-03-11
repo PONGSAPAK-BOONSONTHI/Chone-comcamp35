@@ -7,7 +7,16 @@ function scrollToSection(sectionId) {
     section.scrollIntoView({ behavior: 'smooth' });
 }
 
-var newHTML = '<div class="newElement">Your New HTML Content Here</div>';
+
+document.querySelector('.BT1 button.BaseButton').addEventListener('click', function() {
+    document.querySelector('.navbar').style.display = 'inline-flex';
+    document.querySelector('.nb').style.display = 'block'; 
+});
+
+document.querySelector('.BT1 button.BaseButton-XXX').addEventListener('click', function() {
+    document.querySelector('.navbar').style.display = 'inline-flex';
+    document.querySelector('.nb').style.display = 'none';
+});
 
 document.addEventListener("DOMContentLoaded", function() {
     const accordionButtons = document.querySelectorAll('.Box-6-CT-CL button');
