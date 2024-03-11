@@ -670,7 +670,9 @@ body{
     color: #fff;
 }
 .rotate-icon {
-    margin-right: 13px;
+    color: #fff;
+    margin-left: 20px;
+    width: 30px;
     transition: transform 0.4s ease;
 }
 .rotate-icon path{
@@ -719,6 +721,12 @@ body{
     }
     to {
         max-height: 0;
+    }
+}
+@media screen  and (max-width:768px){
+    #accordion-button{
+        align-items: flex-start;
+        text-align: left;
     }
 }
 .Box-6 a{
