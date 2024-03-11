@@ -9,7 +9,7 @@ function scrollToSection(sectionId) {
 
 
 document.querySelector('.BT1 button.BaseButton').addEventListener('click', function() {
-    document.querySelector('.navbar').style.display = 'inline-flex';
+    document.querySelector('.navbar').style.display = 'none';
     document.querySelector('.nb').style.display = 'block'; 
 });
 
