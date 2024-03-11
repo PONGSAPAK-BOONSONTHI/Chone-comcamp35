@@ -374,6 +374,19 @@ body{
         display:none
     }
 }
+@media screen and (min-width: 1024px) {
+    .Box-2 {
+        justify-content: center;
+        flex-direction: row;
+        gap: 60.8px;
+    }
+    .Box-2-text1 {
+        text-align: left;
+        line-height: 57px;
+        letter-spacing: -1.425px;
+        font-size: 57px;
+    }
+}
 .Box-3-CT {
     display: grid;
     width: auto;
@@ -996,16 +1009,4 @@ body{
         transform: scale(1.1) rotate(-20deg);
     }
 }
-@media screen and (min-width: 1024px) {
-    .Box-2 {
-        justify-content: center;
-        flex-direction: row;
-        gap: 60.8px;
-    }
-    .Box-2-text1 {
-        text-align: left;
-        line-height: 57px;
-        letter-spacing: -1.425px;
-        font-size: 57px;
-    }
-}
+
