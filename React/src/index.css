@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Zftermin;
+  src: url(../font/zftermin-BW-8hCcd.ttf) format("truetype")
+}
+@font-face {
+  font-family: Upheavtt;
+  src: url(../font/upheavtt-B-9OJ9eJ.ttf) format("truetype")
+}
+@font-face {
+  font-family: Prompt-Regular;
+  src: url(../font/Prompt-Regular.ttf) format("truetype")
+}
+@font-face {
+  font-family: Prompt-Bold;
+  src: url(../font/Prompt-Bold.ttf) format("truetype")
+}
+@font-face {
+  font-family: NotoSansThaiLooped-Regular;
+  src: url(../font/NotoSansThaiLooped-Regular.ttf) format("truetype")
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  /* font-size: 20px; */
+  background: rgb(15, 4, 27);
+  height: auto;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(80 80 80 / 46%);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0003;
+}
+
+@layer utilities {
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped&family=Prompt:wght@400;700&display=swap');
+  .textZ {
+    font-family: Zftermin;
+  }
+  .textU {
+    letter-spacing: -0.3325px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 33.25px;
+    color: rgb(237, 238, 240);
+    font-weight: 400 !important;
+    font-family: Upheavtt, sans-serif !important;
+  }
+  .textPR {
+    font-family: Prompt-Regular;
+  }
+  .textPB {
+    font-family: Prompt-Bold;
+  }
+  .textN {
+    font-family: NotoSansThaiLooped-Regular;
+  }
+  .flex-center{
+    @apply flex items-center justify-center
+  }
+  .flex-navbar {
+    @apply flex items-center justify-between top-0 left-0 right-0
+  }
+  .navbar {
+    backdrop-filter: blur(5px);
+    background-color: #1d093750;
+    border: 1px solid rgba(80, 80, 80, .3137254902);
+  }
+  .-navbar {
+    color: rgb(255, 213, 65);
+    transition: all .2s;
+  }
+  .register {
+    padding: 5px 20px;
+    background: rgb(20, 52, 100);
+    color: #fff;
+    @apply textPR text-base leading-5 font-normal 
+  }
+  .-register {
+    background: #14346440;
+    color: rgb(255, 213, 65);
+    transition: all .2s;
+  }
+  .hero {
+    background-color: rgb(21 6 39);
+    min-height: 100dvh;
+    background-image: url(https://comcamp.io/assets/background-Cj2jXSzJ.gif);
+  }
+  .hero-image {
+    animation: slideUp-Down 2s ease-in-out infinite alternate;
+  }
+  .shadow {
+    top: 50%;
+    left: 50%;
+    background-image: linear-gradient(38deg, #143464 69%, #f9a31b 81%);
+    filter: blur(100px);
+    transform: translate(-50%, -50%);
+  }
+  .KMUTT{
+    animation: zoomin-out .3s ease-in-out infinite alternate;
+  }
+  .title{
+    font-size: 64px;
+    margin-block: 0 12px;
+    line-height: 57px;
+    letter-spacing: -1.5px;
+    color: rgb(237, 238, 240);
+    font-weight: 400 !important;
+    font-family: Upheavtt, sans-serif !important;
+  }
+}
+
+@keyframes slideUp-Down {
+  0% {
+      transform: translateY(0);
+  }
+  100%{
+      transform: translateY(10px);
+  }
+}
+@keyframes zoomin-out {
+  0% {
+      transform: scale(1) rotate(-20deg);
+  }
+
+  100% {
+      transform: scale(1.1) rotate(-20deg);
+  }
+}
