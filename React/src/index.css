@@ -102,25 +102,84 @@ body{
   .hero-image {
     animation: slideUp-Down 2s ease-in-out infinite alternate;
   }
-  .shadow {
+  .shadowHero {
     top: 50%;
     left: 50%;
     background-image: linear-gradient(38deg, #143464 69%, #f9a31b 81%);
     filter: blur(100px);
     transform: translate(-50%, -50%);
   }
-  .KMUTT{
+  .KMUTT {
     animation: zoomin-out .3s ease-in-out infinite alternate;
   }
-  .title{
+  .titleMainA {
+    letter-spacing: -0.3325px;
+    text-align: center;
+    line-height: 38px;
+    font-size: 33.25px;
+    color: rgb(237, 238, 240);
+    font-weight: 400 !important;
+    font-family: Upheavtt, sans-serif !important;
+  }
+  .titleMainB {
+    line-height: 57px;
+    letter-spacing: -1.425px;
+    font-size: 57px;
+  }
+  .title {
     font-size: 64px;
-    margin-block: 0 12px;
     line-height: 57px;
     letter-spacing: -1.5px;
     color: rgb(237, 238, 240);
     font-weight: 400 !important;
     font-family: Upheavtt, sans-serif !important;
   }
+  .shadowWCC {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    width: 320px;
+    height: 320px;
+    background-image: linear-gradient(90deg, #143464 50%, #143464 50%);
+    filter: blur(100px);
+    transform: translate(-50%, -50%);
+  }
+  .shadowLearning {
+    transition: all .2s;
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px #285cc440
+  }
+  .text1Learning{
+    text-align: left;
+    line-height: 24.7px;
+    letter-spacing: -0.04275px;
+    font-size: 17.1px;
+    color: rgb(237, 238, 240);
+    font-weight: 700;
+    @apply textPB
+  }
+  .text1Learning520{
+    line-height: 28.5px;
+    letter-spacing: -0.1425px;
+    font-size: 22.8px;
+  }
+  .text1Learning768{
+    text-align: left;
+    line-height: 34.2px;
+    letter-spacing: -0.1995px;
+    font-size: 26.6px;
+  }
+  .text2Learning{
+    text-align: left;
+    padding-left: 6px;
+    line-height: 22.8px;
+    letter-spacing: normal;
+    font-size: 15.2px;
+    color: rgb(237, 238, 240);
+    font-weight: 400;
+    @apply textN
+}
 }
 
 @keyframes slideUp-Down {

@@ -1,7 +1,7 @@
 [
-    {"title": "การเรียน"},
-    {"title": "คุณสมบัติ"},
-    {"title": "ช่วงเวลา"},
-    {"title": "คำถามที่พบบ่อย"},
-    {"title": "ช่องทางการติดต่อ"}
+    { "title": "การเรียน", "section": "section1" },
+    { "title": "คุณสมบัติ", "section": "section2" },
+    { "title": "ช่วงเวลา", "section": "section3" },
+    { "title": "คำถามที่พบบ่อย", "section": "section4" },
+    { "title": "ช่องทางการติดต่อ", "section": "section5" }
 ]
