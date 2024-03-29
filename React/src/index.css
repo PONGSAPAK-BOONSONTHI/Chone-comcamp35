@@ -81,7 +81,6 @@ body{
   }
   .-navbar {
     color: rgb(255, 213, 65);
-    transition: all .2s;
   }
   .register {
     padding: 5px 20px;
@@ -92,7 +91,6 @@ body{
   .-register {
     background: #14346440;
     color: rgb(255, 213, 65);
-    transition: all .2s;
   }
   .hero {
     background-color: rgb(21 6 39);
@@ -146,7 +144,6 @@ body{
     transform: translate(-50%, -50%);
   }
   .shadowLearning {
-    transition: all .2s;
     transform: scale(1.02);
     box-shadow: 0 4px 12px #285cc440
   }
@@ -170,7 +167,7 @@ body{
     letter-spacing: -0.1995px;
     font-size: 26.6px;
   }
-  .text2Learning{
+  .text2Learning {
     text-align: left;
     padding-left: 6px;
     line-height: 22.8px;
@@ -179,7 +176,13 @@ body{
     color: rgb(237, 238, 240);
     font-weight: 400;
     @apply textN
-}
+  }
+  .grid-col-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-col-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
 }
 
 @keyframes slideUp-Down {

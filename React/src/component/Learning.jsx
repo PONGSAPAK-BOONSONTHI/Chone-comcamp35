@@ -11,7 +11,7 @@ const Learning = () => {
 
         <div className='grid w-auto mt-6 px-[10%] gap-6'>
           {learning.map((item, id) => (
-            <div key={id} className='px-[45px] py-[24px] border-[1px] border-[#505050]/[0.314] rounded-2xl bg-[#1a408d40] hover:shadowLearning'>
+            <div key={id} className='px-[45px] py-[24px] border-[1px] border-[#505050]/[0.314] rounded-2xl bg-[#1a408d40] hover:shadowLearning  duration-200'>
               <div className='flex items-center justify-start gap-[10px] max-768:grid max-768:justify-items-center'>
                 <img src={item.imageSrc} className='w-[100px] h-[100px] select-none pointer-events-none' alt="imageSrc" />
                 <div className='grid gap-3'>

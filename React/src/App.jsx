@@ -3,6 +3,7 @@ import Navbar from './component/Navbar.jsx'
 import Hero from './component/Hero.jsx'
 import WhatisComCamp from './component/WhatisComCamp.jsx'
 import Learning from './component/Learning.jsx'
+import Conditions from './component/Conditions.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +20,8 @@ function App() {
       <Navbar scrollToSection={scrollToSection}/>
       <Hero />
       <WhatisComCamp />
-      <Learning id="section1"/>
+      <Learning />
+      <Conditions />
     </main>
   )
 }

@@ -11,18 +11,18 @@ const Navbar = ({ scrollToSection }) => {
   };
 
   return (
-    <header>
+    <header className='text-xl'>
       <nav className='navbar flex-navbar px-5 m-3 rounded-2xl fixed z-10 text-white'>
-        <a onClick={() => scrollToImage('logoImage')} className='cursor-pointer'><img className='pointer-events-none mt-2.5 overflow-clip' src={logoImage} width={100} alt="logoImage"/></a>
+        <a onClick={() => scrollToImage('logoImage')} className='cursor-pointer mt-2 mb-1.5'><img className='pointer-events-none overflow-clip' src={logoImage} width={100} height={100} alt="logoImage"/></a>
 
         <div className='max-mb:hidden'>
           {navbar.map((item, id) => (
-            <a onClick={() => scrollToSection(item.section)} className='justify-start cursor-pointer p-3' key={id}><span className='textPR text-sm leading-5 font-normal hover:-navbar '>{item.title}</span></a>
+            <a onClick={() => scrollToSection(item.section)} className='justify-start cursor-pointer p-3' key={id}><span className='textPR text-sm leading-5 font-normal hover:-navbar duration-200'>{item.title}</span></a>
           ))}
         </div>
 
         <div className='max-mb:hidden'>
-          <a className='cursor-pointer register hover:-register'>ลงทะเบียน</a>
+          <a className='cursor-pointer register hover:-register duration-200'>ลงทะเบียน</a>
         </div>
 
         <div className='mb:hidden'>
