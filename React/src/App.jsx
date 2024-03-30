@@ -4,6 +4,8 @@ import Hero from './component/Hero.jsx'
 import WhatisComCamp from './component/WhatisComCamp.jsx'
 import Learning from './component/Learning.jsx'
 import Conditions from './component/Conditions.jsx'
+import Timeline from './component/Timeline.jsx'
+import FAQ from './component/FAQ.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +24,8 @@ function App() {
       <WhatisComCamp />
       <Learning />
       <Conditions />
+      <Timeline />
+      <FAQ />
     </main>
   )
 }

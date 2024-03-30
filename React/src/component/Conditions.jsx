@@ -10,7 +10,7 @@ const Conditions = () => {
 
         <div className=' grid w-auto leading-6 my-[30px] gap-6 768:grid-col-2 lg:grid-col-4'>
           {conditions.map((conditions, id) => (
-            <div key={conditions} className='h-[370px] p-6 border-[2px] border-[#505050]/[0.314] rounded-2xl bg-[#1a408d40] duration-200'>
+            <div key={id} className='h-[370px] p-6 border-[2px] border-[#505050]/[0.314] rounded-2xl bg-[#1a408d40] duration-200 hover:shadowLearning'>
               <div className='flex flex-col items-center justify-between'>
                 <img className='w-auto max-w-full text-center rounded-2xl' src={conditions.gif} alt="gif" />
                 <span className='mt-6 text-center text-sm text-[#edeef0] textN'>{conditions.title}</span>
