@@ -1,19 +1,23 @@
-import React from 'react'
-import { logoImage, MenuImage, MenuPath } from '../utils'
+import React, { useState } from 'react';
+import { logoImage, MenuImage, MenuPath, MenuPathX } from '../utils'
 import navbar from '../data/navbar.json'
 
 const Navbar = ({ scrollToSection }) => {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const scrollToImage = (image) => {
     const element = document.getElementById(image)
-    if(element) {
-      element.scrollIntoView({behavior:'smooth'})
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
     }
   };
 
   return (
     <header className='text-xl'>
       <nav className='navbar flex-navbar px-5 m-3 rounded-2xl fixed z-10 text-white'>
-        <a onClick={() => scrollToImage('logoImage')} className='cursor-pointer mt-2 mb-1.5'><img className='pointer-events-none overflow-clip' src={logoImage} width={100} height={100} alt="logoImage"/></a>
+
+        <a onClick={() => scrollToImage('logoImage')} className='cursor-pointer mt-2 mb-1.5'><img className='pointer-events-none overflow-clip' src={logoImage} width={100} height={100} alt="logoImage" /></a>
 
         <div className='max-mb:hidden'>
           {navbar.map((item, id) => (
@@ -26,9 +30,10 @@ const Navbar = ({ scrollToSection }) => {
         </div>
 
         <div className='mb:hidden'>
-          <button className='rounded-[5.7px] appearance-none w-[38px] h-[38px] items-center inline-flex justify-center box-border bg-[#ddeaf814] hover:bg-[#d3edf8]/[0.114]'>
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)} className='rounded-[5.7px] appearance-none w-[38px] h-[38px] items-center inline-flex justify-center box-border bg-[#ddeaf814] hover:bg-[#d3edf8]/[0.114]'>
             <svg xmlns={MenuImage} width={15} viewBox="0 0 15 15" fill="none">
-              <path d={MenuPath} fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+              <path d={isMenuOpen ? MenuPathX : MenuPath} fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
             </svg>
           </button>
         </div>

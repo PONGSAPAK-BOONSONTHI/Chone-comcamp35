@@ -6,6 +6,9 @@ import Learning from './component/Learning.jsx'
 import Conditions from './component/Conditions.jsx'
 import Timeline from './component/Timeline.jsx'
 import FAQ from './component/FAQ.jsx'
+import SPONSOR from './component/SPONSOR.jsx'
+import Contact from './component/Contact.jsx'
+import By from './component/By.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,7 +21,7 @@ function App() {
   };
 
   return (
-    <main className='text-xl h-[10000px]'>
+    <main className='text-xl'>
       <Navbar scrollToSection={scrollToSection}/>
       <Hero />
       <WhatisComCamp />
@@ -26,6 +29,9 @@ function App() {
       <Conditions />
       <Timeline />
       <FAQ />
+      <SPONSOR />
+      <Contact />
+      <By />
     </main>
   )
 }
