@@ -33,14 +33,41 @@ const Navbar = ({ scrollToSection }) => {
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)} className='rounded-[5.7px] appearance-none w-[38px] h-[38px] items-center inline-flex justify-center box-border bg-[#ddeaf814] hover:bg-[#d3edf8]/[0.114]'>
             <svg xmlns={MenuImage} width={15} viewBox="0 0 15 15" fill="none">
-              <path d={isMenuOpen ? MenuPathX : MenuPath} fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+              <path d={MenuPath} fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
             </svg>
           </button>
         </div>
 
       </nav>
+
+      {isMenuOpen && (
+        <nav className='navbar-menu flex-navbar-menu min-h-[100dvh] pt-2 px-3 pb-3 rounded-2xl fixed z-10 text-white'>
+
+          <div className='flex flex-row items-center justify-between py-[5px] px-[20px]'>
+
+            <a onClick={() => scrollToImage('logoImage')} className='cursor-pointer mt-2 mb-1.5'><img className='pointer-events-none overflow-clip' src={logoImage} width={100} height={100} alt="logoImage" /></a>
+
+            <div className='mb:hidden'>
+              <button
+                onClick={() => setIsMenuOpen(!isMenuOpen)} className='rounded-[5.7px] appearance-none w-[38px] h-[38px] items-center inline-flex justify-center box-border bg-[#ddeaf814] hover:bg-[#d3edf8]/[0.114]'>
+                <svg xmlns={MenuImage} width={15} viewBox="0 0 15 15" fill="none">
+                  <path d={MenuPathX} fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path>
+                </svg>
+              </button>
+            </div>
+
+          </div>
+
+          <div className='flex-center flex-col py-[20px] gap-[22.8px]'>
+            {navbar.map((item, id) => (
+              <a onClick={() => scrollToSection(item.section)} className='cursor-pointer' key={id}><span className='textPR text-sm leading-5 font-normal hover:-navbar duration-200 box-border'>{item.title}</span></a>
+            ))}
+          </div>
+
+        </nav>
+      )}
     </header>
   )
 }
 
-export default Navbar
+export default Navbar;
